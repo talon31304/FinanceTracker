@@ -1,6 +1,6 @@
-package GUI.classes.playground;
+package gui.classes.playground;
 
-import GUI.abstractClasses.InsideBox;
+import gui.abstractClasses.BaseGuiObject;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,7 +8,7 @@ import java.awt.*;
 /**
  * Created by Rick on 9/27/2014.
  */
-public class SimpleTextItem extends InsideBox {
+public class SimpleTextItem extends BaseGuiObject {
     private String Value;
     public SimpleTextItem(String text)
     {

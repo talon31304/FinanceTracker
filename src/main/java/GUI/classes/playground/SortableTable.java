@@ -1,6 +1,6 @@
-package GUI.classes.playground;
+package gui.classes.playground;
 
-import GUI.abstractClasses.TableBox;
+import gui.abstractClasses.BaseGridView;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -11,11 +11,14 @@ import java.awt.*;
 /**
  * Created by Rick on 9/27/2014.
  */
-public class SortableTable extends TableBox {
+public class SortableTable extends BaseGridView {
 
     public SortableTable (String title, Object rowData[][], String columnNames[]) {
 
-        super(title,rowData,columnNames,true);
+        setRowData(rowData);
+        setColumnNames(columnNames);
+        setTitle(title);
+        setSortable(true);
     }
     public Component toComponent()
     {

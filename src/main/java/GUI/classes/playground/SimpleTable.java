@@ -1,6 +1,6 @@
-package GUI.classes.playground;
+package gui.classes.playground;
 
-import GUI.abstractClasses.TableBox;
+import gui.abstractClasses.BaseGridView;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,11 +8,14 @@ import java.awt.*;
 /**
  * Created by Rick on 9/27/2014.
  */
-public class SimpleTable extends TableBox {
+public class SimpleTable extends BaseGridView {
 
     public SimpleTable (String title, Object rowData[][], String columnNames[]) {
 
-        super(title,rowData,columnNames,false);
+        setRowData(rowData);
+        setColumnNames(columnNames);
+        setTitle(title);
+        setSortable(false);
     }
 
     public Component toComponent()

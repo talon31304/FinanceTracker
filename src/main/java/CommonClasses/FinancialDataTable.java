@@ -1,6 +1,4 @@
-package CommonClasses;
-
-import java.util.Date;
+package commonclasses;
 
 /**
  * Created by Rick on 9/26/2014.

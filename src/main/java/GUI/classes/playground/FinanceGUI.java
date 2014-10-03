@@ -1,7 +1,7 @@
-package GUI.classes.playground;
+package gui.classes.playground;
 
-import GUI.abstractClasses.BaseBox;
-import GUI.interfaces.BoxedItem;
+import gui.abstractClasses.BaseContainer;
+import gui.interfaces.JGuiConvertible;
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,26 +10,30 @@ import java.util.ArrayList;
 /**
  * Created by Rick on 9/28/2014.
  */
-public class FinanceGUI extends BaseBox {
-    private java.util.List <BoxedItem> contents;
+public class FinanceGUI extends BaseContainer {
+    private java.util.List <JGuiConvertible> contents;
     public FinanceGUI() {
-    contents= new ArrayList<BoxedItem>();
+    contents= new ArrayList<JGuiConvertible>();
     }
-    public void add(BoxedItem subContentHolder){
-        contents.add(subContentHolder);
+
+    //public void add(GuiContainer[] subContentItems,int vGap){}
+   // public void add(GuiContainer subContentHolder){
+     //   contents.add(subContentHolder);
+    //}
+    public void add(JGuiConvertible[] subContentItems,int vGap){}
+    public void add(JGuiConvertible subContent){
+        contents.add(subContent);
     }
-    public void addAt(BoxedItem subContentHolder, int hPos, int vPos){}
-    public void add(BoxedItem [] subContentItems,int vGap){}
     public Component toComponent(){
         JPanel panel=new JPanel();
-        for (final BoxedItem item : contents) {
+        for (final JGuiConvertible item : contents) {
             panel.add(item.toComponent());
         }
         return panel;
     }
     public JPanel toJPanel(){
         JPanel panel=new JPanel();
-        for (final BoxedItem item : contents) {
+        for (final JGuiConvertible item : contents) {
             panel.add(item.toComponent());
         }
         return panel;

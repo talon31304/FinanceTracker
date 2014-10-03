@@ -1,4 +1,4 @@
-package GUI.classes.playground;
+package gui.classes.playground;
 
 
 public class FinanceTrackerApp {

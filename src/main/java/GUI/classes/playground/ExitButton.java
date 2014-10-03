@@ -1,6 +1,6 @@
-package GUI.classes.playground;
+package gui.classes.playground;
 
-import GUI.abstractClasses.InsideBox;
+import gui.abstractClasses.BaseGuiObject;
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 /**
  * Created by Rick on 9/28/2014.
  */
-public class ExitButton extends InsideBox {
+public class ExitButton extends BaseGuiObject {
     private static class ExitButtonHandler implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             System.exit(0);
