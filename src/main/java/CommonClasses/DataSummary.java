@@ -1,4 +1,4 @@
-package CommonClasses;
+package commonclasses;
 
 import java.util.Date;
 
