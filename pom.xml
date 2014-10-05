@@ -44,6 +44,15 @@
             <version>1.9.5</version>
             <scope>test</scope>
         </dependency>
-
+		<dependency>
+			<groupId>org.jsoftware</groupId>
+			<artifactId>javamail-jms2javamail</artifactId>
+			<version>1.5.1</version>
+		</dependency>
+        <dependency>
+            <groupId>net.sourceforge.jtds</groupId>
+            <artifactId>jtds</artifactId>
+            <version>1.3.1</version>
+        </dependency>
     </dependencies>
 </project>
